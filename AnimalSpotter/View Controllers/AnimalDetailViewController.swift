@@ -62,9 +62,6 @@ class AnimalDetailViewController: UIViewController {
         title = animal.name
         descriptionLabel.text = animal.description
         coordinatesLabel.text = "lat: \(animal.latitude), long: \(animal.longitude)"
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .short
         spottedOnLabel.text = dateFormatter.string(from: animal.timeSeen)
     }
     
